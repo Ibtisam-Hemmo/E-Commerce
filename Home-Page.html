@@ -4,10 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Tab-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/Home-Page.css">
+    <link rel="stylesheet" href="./form-add.css">
     <title>Home Page</title>
 </head>
 <body>
+    <header id="header">
+        <nav>
+            <img src="./Assets/shopping-icon.png" alt="Shopping logo" class="logo-img">
+            <ul>
+                <li>
+                    <a href="./Home-Page.html" >Home</a>
+                </li>
+                <li>
+                    <a href="#header">About</a>
+                </li>
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+                <li >
+                    <a href="./Cart.html">
+                        <i class="btn fa fa-shopping-bag" aria-hidden="true" id="cart"></i>
+                    </a>
+                </li>
+                <li >
+                    <a >
+                        <i class="btn fa fa-sign-out" aria-hidden="true" id="signOut"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <div id="add">
+        <div class="add-form">
+            <form >
+                <div class="input">
+                    <input id="name" type="text" class="input-field" />
+                    <label class="input-label">Name</label>
+                </div>
+
+                <div class="input">
+                    <input id="price" min="0" type="number" class="input-field" />
+                    <label class="input-label">Price</label>
+                </div>
+
+                <div class="input">
+                    <input id="img_url" type="url" class="input-field" />
+                    <label class="input-label">Image URL</label>
+                </div>
+
+                <div class="input">
+                    <input id="category" type="text" class="input-field" />
+                    <label class="input-label">Category</label>
+                </div>
+
+                <div class="input">
+                    <textarea id="description" class="input-field" rows="1"></textarea>
+                    <label class="input-label">Description</label>
+                </div>
+
+                <div class="action">
+                    <button id="add_btn" class="btn btn-add">Add</button>
+                    <button id="cancel_btn" class="btn btn-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <img src="./Assets/add-product.png" alt="Add Product" class="img-add">
+    </div>
     
+    <main class="about" id="about">
+        <div class="about-img">
+            <img src="./Assets/about-img.png" alt="About Image">
+        </div>
+
+        <div class="about-text">
+            <h1>Women's Collection</h1>
+            <p> Build a better you by shopping from our app. We are a community of equality advocates who want to create meaningful change within the ecommerce industry.<br>
+            </p>
+            <button class ='shop' onclick="location.href='#products'">Shop Now</button>
+        </div>
+    </main>
+
+    <section class="kinds">
+    
+        <div class="categories">
+            <select name="" id="" class="category">
+                <option value="">option1</option>
+                <option value="">option1</option>
+                <option value="">option1</option>
+                <option value="">option1</option>
+                <option value="">option1</option>
+                <option value="">option1</option>
+                <option value="">option1</option>
+                <option value="">option1</option>
+            </select>
+        </div>
+
+        <div class="searchBox">
+            <input class="searchInput"type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        
+    </section>
+
+    <main id="products">
+        <div id="products-container">
+            <div id="product-container">
+            </div>
+        </div>
+    </main>
+            
+    <footer>
+        <p>Development by Ibtisam Hemmo 2022</p>
+        <button class="btn btn-up" onclick="location.href='#header'">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+    </footer>
+
+    <script src="https://use.fontawesome.com/cf3935a44e.js"></script>
+    <script src="./JS Files/dom.js"></script>
+    <script src="./JS Files/Home-Page.js"></script>
 </body>
 </html>

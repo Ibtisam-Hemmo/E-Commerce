@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@200;300;400&display=swap');
+
+:root{
+    --purple: #7A4495;
+    --light-purple: #B270A2;
+    --pink: #FF8FB1;
+    --light-pink: #FCE2DB;
+    --second-light-pink: #f8eef8;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins','Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    background-color: var(--second-light-pink)
+}
+
+nav .logo-img{
+    width: 50px;
+    margin: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+nav ul li{
+    margin-right: 30px;
+        text-align: center;
+
+}
+
+nav ul li a{
+    justify-content:center;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* End Styling Navbar */
+
+/* Styling about section */
+main.about {
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    width: 370px;
+}
+
+.about-text{
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text h1{
+    font-family: 'Courgette','Poppins','Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.about-text p{
+    font-size: 18px;
+    align-self: flex-end;
+    line-height: 33px;
+}
+
+.about .shop{
+    align-self: flex-start;
+    width: 150px;
+    padding: 20px;
+    background-color: var(--light-purple);
+    color: var(--white);
+    border: none;
+    border-radius: 4%;
+    margin-top: 50px;
+}
+
+.about .shop:hover{
+    background-color: var(--purple);
+    transform:scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/* End Styling about section */
+
+/* Styling Search box and Category Select */
+.kinds{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 170px;
+    align-items: center;
+}
+
+.category{
+    width: 300px;
+    height: 49px;
+    padding: 7px;
+    background-color: var(--second-light-pink)
+}
+.searchBox {
+    background-color: var(--light-purple);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.searchButton {
+    color: white;
+    background-color: var(--light-pink);
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.searchBox:hover > .searchButton {
+    background-color: var(--light-purple);
+    color: #000;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+    color: white;
+}
+
+#cart{
+    border-radius: 50%;
+    font-size: 22px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+/* End Styling Search box and Category Select */
+
+#signOut{
+    border-radius: 50%;
+    font-size: 22px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.clicked{
+    border-bottom: solid var(--purple);
+}
+
+/* Styling Product section */
+main#products{
+    padding: 0 20px;
+}
+
+#products-container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.product-container{
+    margin: 30px;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid var(--light-pink);
+    justify-content: space-evenly;
+}
+
+.product-container:hover{
+    box-shadow: 0 7px 8px 8px var(--light-pink);
+}
+
+#product-img{
+    width: 180px;
+    height: 220px;
+}
+
+#control-buttons{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn{
+    padding: 7px;
+    width: 40px;
+    border-radius: 7px;
+    border: none;
+    margin-left: 20px;
+    background-color: var(--light-purple);
+    color: var(--white);
+}
+
+.btn:hover{
+    background-color: var(--purple);
+    transform:scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cart-icon{
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.quantity{
+    margin-left: 10px;
+}
+/* End Styling Product Section */
+
+/* Styling Footer */
+footer{
+    background-color: var(--second-light-pink);
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 30px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-up{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+}
+/* End Styling Footer */
+
+/* Styling Seller Add Form */
+
+input {
+    appearance: none;
+    border-radius: 0;
+}
+
+#add{
+    padding: 30px 100px 30px;
+    display: flex;
+    width: 100wh;
+    box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+    justify-content:space-between;
+}
+
+.add-form{
+    width: 400px;
+}
+
+.img-add{
+    width: 500px;
+}
+.name_price {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#name {
+    padding-left: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+}
+.input {
+    margin-top: 1.5rem;
+}
+
+.input-label {
+    color: #77a2e7;
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+}
+
+.input-field {
+    border: 0;
+    border-bottom: 2px solid #eee;
+    font-size: 1.125rem;
+    padding: 0.25rem 0;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.input-field:focus,:valid {
+    outline: 0;
+    border-bottom-color: var(--light-purple)
+}
+
+.input-label {
+    color: var(--purple);
+    transform: translateY(-1.5rem);
+}
+
+.action {
+    margin-top: 2rem;
+    display: flex;
+    
+}
+
+.btn-add{
+    width: 50%;
+    padding: 15px;
+}
+
+.btn-cancel{
+    width: 50%;
+    background-color: red;
+}
+
+.btn-cancel:hover{
+    background-color: #000;
+}
+
+/* Responsive about Section */
+@media (max-width: 950px){
+    .about img{
+        display: none;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    #about {
+        padding: 0 80px;
+        height: 70vh;
+    }
+    #about .about-text{
+        margin-left: 25px;
+        display: inline-block;
+    }
+}
+
+/* End Responsive about Section */
+
+
+/* Responsive Add Form Section */
+@media only screen and (max-width: 600px) {
+    .name_price {
+    display: block;
+    }
+}
+/* End Responsive Add Form Section */
