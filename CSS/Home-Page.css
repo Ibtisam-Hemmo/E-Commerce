@@ -257,6 +257,70 @@ main#products{
 }
 /* End Styling Product Section */
 
+
+/* Styling Contacts Section and footer */
+
+.footer {
+    padding: 30px 70px;
+    background-color: var(--second-light-pink);
+}
+
+.footer .boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .boxes .box h3 {
+    font-size: 20px;
+    color: var(--purple);
+    padding: 10px 10px
+}
+
+.footer .boxes .box a {
+    display: block;
+    padding: .5rem 0;
+    text-decoration: none;
+    color: var(--light-purple);
+}
+
+.footer .boxes .box a i {
+    color: var(--light-purple);
+    padding-right: .5rem;
+}
+
+.footer .boxes .box a:hover i {
+    color: var(--light-purple);
+    padding-right: 1rem;
+    font-size:1.5rem;
+}
+
+.footer .contact {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .contact i {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple);
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.footer .contact i:hover {
+    font-size: 2.8rem;
+    color: var(--light-purple);
+}
+/* End Styling Contact Section */
+
 /* Styling Footer */
 footer{
     background-color: var(--second-light-pink);
@@ -275,6 +339,8 @@ footer{
     font-size: 25px;
 }
 /* End Styling Footer */
+
+
 
 /* Styling Seller Add Form */
 
@@ -396,3 +462,5 @@ textarea {
     }
 }
 /* End Responsive Add Form Section */
+
+
