@@ -9,7 +9,7 @@ function sellerSignIn(){
     if(!isSeller){
         localStorage.setItem('isSeller', JSON.stringify(!isSeller));
         localStorage.setItem('isCustomer',JSON.stringify(isCustomer));
-        location.replace("E-Commerce/Home-Page.html");   
+        location.replace("/Home-Page.html");   
     }
 }
 
@@ -17,6 +17,6 @@ function customerSignIn(){
     if(!isCustomer){
         localStorage.setItem('isCustomer', JSON.stringify(!isCustomer));
         localStorage.setItem('isSeller', JSON.stringify(isSeller));
-        location.replace("E-Commerce/Home-Page.html");
+        location.replace("/Home-Page.html");
     }
 }
