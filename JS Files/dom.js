@@ -22,7 +22,7 @@ const productsContainer = document.getElementById('products-container');
 let initialProducts =[
     {
         id : 1,
-        img_url: '../Assets/dress 1.png',
+        img_url: './Assets/dress 1.png',
         name : 'Dress',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 20,
@@ -32,7 +32,7 @@ let initialProducts =[
 
     {
         id : 2,
-        img_url: '../Assets/dress 2.png',
+        img_url: './Assets/dress 2.png',
         name : 'Dress 2',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 30,
@@ -42,7 +42,7 @@ let initialProducts =[
 
     {
         id : 3,
-        img_url: '../Assets/dress 3.png',
+        img_url: './Assets/dress 3.png',
         name : 'Dress 3',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 10,
@@ -52,7 +52,7 @@ let initialProducts =[
 
     {
         id : 4,
-        img_url: '../Assets/dress 4.png',
+        img_url: './Assets/dress 4.png',
         name : 'Dress 4',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 40,
@@ -62,7 +62,7 @@ let initialProducts =[
 
     {
         id : 5,
-        img_url: '../Assets/dress 5.png',
+        img_url: './Assets/dress 5.png',
         name : 'Dress',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 20,
@@ -72,7 +72,7 @@ let initialProducts =[
 
     {
         id : 6,
-        img_url: '../Assets/dress 6.png',
+        img_url: './Assets/dress 6.png',
         name : 'Dress',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 20,
@@ -82,7 +82,7 @@ let initialProducts =[
 
     {
         id : 7,
-        img_url: '../Assets/dress 7.png',
+        img_url: './Assets/dress 7.png',
         name : 'Dress',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 20,
@@ -92,7 +92,7 @@ let initialProducts =[
 
     {
         id : 8,
-        img_url: '../Assets/dress 8.png',
+        img_url: './Assets/dress 8.png',
         name : 'Dress',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 20,
@@ -102,7 +102,7 @@ let initialProducts =[
 
     {
         id : 9,
-        img_url: '../Assets/dress 9.png',
+        img_url: './Assets/dress 9.png',
         name : 'Dress',
         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat.',
         price : 20,
